@@ -4,6 +4,7 @@ public class GetterSetter {
     private String name;
     private int age;
 
+
     public void setName(String name){
         this.name= name;
     }
@@ -12,9 +13,9 @@ public class GetterSetter {
         return name;
     }
 
-    public int setAge(int age){
+    public void setAge(int age){
         this.age = age;
-        return age;
+
     }
 
     public int getAge() {
