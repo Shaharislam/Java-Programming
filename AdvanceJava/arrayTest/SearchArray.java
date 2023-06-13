@@ -3,69 +3,53 @@ import java.util.Arrays;
 import java.util.Random;
 public class SearchArray {
     private static final int LENGTH = 3;
-    private static final int MAX_TICKET_NUMBER = 69;
+    private static final int MAX_TICKET_NUMBER = 20;
 
     public static void main(String[] args) {
 
         int[] ticket = generateNumbers();
         Arrays.sort(ticket);
         printTicket(ticket);
+
     }
 
     public static int[] generateNumbers() {
 
         int[] ticket = new int[LENGTH];
+        int searchNumber;
 
         Random random = new Random();
 
         for (int i = 0; i < LENGTH; i++) {
             int randomNumber;
-            randomNumber = random.nextInt(MAX_TICKET_NUMBER) + 1;
-            /**
-            Generate random number then search to make sure it doesn't
-            already exist in the array. If it does, regenerate and search again.
-             **/
-//            do {
-//                randomNumber = random.nextInt(MAX_TICKET_NUMBER) + 1;
-//                System.out.println("Ticket: "+ticket[i]+"   Random Number:= "+randomNumber);
-//            } while (search(ticket, randomNumber));
+            searchNumber = random.nextInt(MAX_TICKET_NUMBER)+1;
 
-            //Number is unique if we get here. Add it to the array.
+            randomNumber = random.nextInt(MAX_TICKET_NUMBER) + 1;
+
             ticket[i] = randomNumber;
-            System.out.println("Ticket: "+ticket[i]+"   Random Number:= "+randomNumber);
+            boolean number  = search(ticket, searchNumber);
+            if(number==true)
+            {
+
+                //System.out.println("Ticket: "+ticket[i]+"   Random Number:= "+randomNumber + " Your Search Number isn't found ");
+                System.out.println("Ticket: "+ticket[i]+"   Random Number:= "+randomNumber + "  Yes, You Search this Number ");
+            }
         }
 
         return ticket;
     }
 
-    /*
-     * Does a sequential search on the array to find a value
-     *
-      param array             Array to search through
-      param numberToSearchFor Value to search for
-     * @return true if found, false if not
-     */
-//    public static boolean search(int[] array, int numberToSearchFor) {
-//
-//        /*
-//          This is called an enhanced loop.
-//          It iterates through 'array' and
-//          each time assigns the current element to 'value'
-//         */
-//        //System.out.println("NumberToSearchFor = "+numberToSearchFor);
-//        for (int value : array) {
-//            System.out.println("Value:= "+value+ "    NumberToSearchFor = "+numberToSearchFor);
-//            if (value == numberToSearchFor) {
-//                return true;
-//            }
-//        }
-//
-//        /*
-//          If we've reached this point, then the entire array was searched
-//          and the value was not found
-//         */
-//        return false;
-//    }
+    public static boolean search(int[] array, int numberToSearchFor) {
+
+        //System.out.println("NumberToSearchFor = "+numberToSearchFor);
+        for (int value : array) {
+            //System.out.println("Value:= "+value+ "    NumberToSearchFor = "+numberToSearchFor);
+            if (value == numberToSearchFor) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 //    public static boolean binarySearch(int[] array, int numberToSearchFor) {
 //
