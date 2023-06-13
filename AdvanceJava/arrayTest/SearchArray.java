@@ -2,8 +2,8 @@ package arrayTest;
 import java.util.Arrays;
 import java.util.Random;
 public class SearchArray {
-    private static final int LENGTH = 3;
-    private static final int MAX_TICKET_NUMBER = 20;
+    private static final int LENGTH = 10;
+    private static final int MAX_TICKET_NUMBER = 60;
 
     public static void main(String[] args) {
 
