@@ -12,6 +12,9 @@ public class FibonacciSeries {
             first = second;
             second = nextNumber;
         }
+        System.out.println();
+        System.out.print(firstNumber + " " + SecondNumber); //print 0 and 1
+        FibonacciSeries.printFibonacci(20);
 
     }
 
