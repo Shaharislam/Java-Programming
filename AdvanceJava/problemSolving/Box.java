@@ -3,10 +3,10 @@ package problemSolving;
 public class Box {
     double height,width,depth;
 
-    Box(double h, double w ,double d){
-        this.height=h;
-        this.width =w;
-        this.depth=d;
+    Box(double height,double width,double depth){
+        this.height=height;
+        this.width =width;
+        this.depth=depth;
     }
 
     void displayVol(){
