@@ -25,9 +25,11 @@ public class AccessStaticVariables {
 
         StaticVariable.count++;// Static variable related to class not object for that we can access it by class Name
         ins1.count= 10; // Instance variable related to object for that we can access it by the Object not class name
-        InstanceVariable.count2=10;
-        ins1.instanceVariable();
+
         StaticVariable.totalStaticObjectInStaticMethod(); // Static method called by class name
         StaticMethod.staticMethodInAClass(); // static method called by class name it related to class not object;
+
+
+
     }
 }
