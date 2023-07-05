@@ -19,6 +19,7 @@ public class PrimeNumber {
         System.out.println();
         System.out.println("Total Prime Number := "+countPrime);
     }
+
         if (number <= 1) {
             return false;
         }
