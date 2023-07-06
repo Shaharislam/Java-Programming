@@ -41,6 +41,20 @@ public class Pattern {
             }
             System.out.println();
         }
+        int d=0,e=0,f=6;
+        for (d=0; d<f; d++)
+        {
+            for (e=1; e<=d; e++)
+            {
+                System.out.print(" ");
+            }
+            for (e=f; e>=1+d; e-- )
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
     }
 
 }
