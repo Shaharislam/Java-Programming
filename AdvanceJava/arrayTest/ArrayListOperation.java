@@ -40,5 +40,12 @@ public class ArrayListOperation {
         number.remove(2);
         System.out.print(number);
 
+        //Remove All data from Array List
+        System.out.println();
+        System.out.print("Remove All ArrayList Data:= ");
+        number.removeAll(number);
+        System.out.print(number);
+
+
     }
 }
