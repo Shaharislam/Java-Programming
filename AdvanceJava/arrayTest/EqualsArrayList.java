@@ -30,9 +30,5 @@ public class EqualsArrayList {
         System.out.println();
         boolean ans = number1.equals(number2);
         System.out.println("Number1 == Number2:= is "+ ans);
-
-
-
-
     }
 }
