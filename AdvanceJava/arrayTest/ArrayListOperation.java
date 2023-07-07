@@ -34,5 +34,11 @@ public class ArrayListOperation {
             System.out.print(" "+itr.next());
         }
 
+        //Remove Data
+        System.out.println();
+        System.out.print("After Remove ArrayList Data:= ");
+        number.remove(2);
+        System.out.print(number);
+
     }
 }
