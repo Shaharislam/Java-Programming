@@ -1,6 +1,8 @@
+package matrix;
+
 import java.util.Scanner;
 
-public class Array_LinkedList {
+public class MatrixAddition {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int row;
@@ -10,6 +12,7 @@ public class Array_LinkedList {
         col = input.nextInt();
         int [][]Matrix1 = new int[row][col];
         int [][]Matrix2 = new int[row][col];
+        int [][]AddMatrix = new int[row][col];
         System.out.println();
         System.out.println("Plz Input Matrix1 Data = Row X Column:= "+row + " X  "+col);
         for (int i=0;i<row;i++)
@@ -39,6 +42,16 @@ public class Array_LinkedList {
         for (int i=0;i<row;i++) {
             for (int j = 0; j < col; j++) {
                 System.out.print("\t"+Matrix2[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println("Add two matrix Matrix1 && Matrix2:= ");
+
+        for (int i=0;i<row;i++) {
+            for (int j = 0; j < col; j++) {
+
+                AddMatrix[i][j] = Matrix1[i][j]+Matrix2[i][j];
+                System.out.print("\t"+AddMatrix[i][j]);
             }
             System.out.println();
         }
