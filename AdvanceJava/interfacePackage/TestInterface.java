@@ -8,5 +8,9 @@ public class TestInterface {
 
         Cat ct = new Cat();
         ct.eat();
+
+        System.out.println();
+        MultipleInheritanceC mic = new MultipleInheritanceC();
+        mic.play();
     }
 }
