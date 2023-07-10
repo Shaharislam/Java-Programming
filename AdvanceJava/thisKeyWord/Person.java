@@ -14,7 +14,11 @@ public class Person {
         this.age =age;
     }
 
+    void message(){
+        System.out.println("This is Message Method. "+"\n");
+    }
     void displayInfo(){
+        this.message(); // this keyword use for method call in same class
         System.out.println("name:= "+name);
         System.out.println("Age:= "+age);
         System.out.println("Color:- "+color);
