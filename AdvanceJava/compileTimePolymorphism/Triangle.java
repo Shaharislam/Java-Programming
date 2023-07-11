@@ -11,6 +11,7 @@ public class Triangle extends Shape{
 
     @Override
     double area() {
+        System.out.print("Sub Class:=   ");
         return .5*base*height;
     }
 }

@@ -11,6 +11,7 @@ public class Rectangle extends Shape{
 
     @Override
     double area() {
+        System.out.print("Sub Class:=   ");
         return length*width;
     }
 }
