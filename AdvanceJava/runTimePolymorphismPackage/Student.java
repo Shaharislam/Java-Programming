@@ -1,4 +1,4 @@
-package polymorphismPackage;
+package runTimePolymorphismPackage;
 
 public class Student extends Teacher{
 

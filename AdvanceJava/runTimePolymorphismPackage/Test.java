@@ -1,4 +1,4 @@
-package polymorphismPackage;
+package runTimePolymorphismPackage;
 
 public class Test {
     public static void main(String[] args) {
