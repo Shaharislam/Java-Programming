@@ -1,4 +1,4 @@
-package arrayTest;
+package arrayAndList;
 
 import java.util.Arrays;
 

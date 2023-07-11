@@ -1,4 +1,4 @@
-package arrayTest;
+package arrayAndList;
 import java.util.Random;
 public class TestArray {
     private static final int LENGTH = 5;
